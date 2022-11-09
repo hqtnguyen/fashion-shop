@@ -1,11 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import HomeView from "./HomeView";
 
-export default function HomeContent() {
-  return (
-    <div>
-      <p>Đây là Home Content</p>
-      <Link to={"/"}>Link to /</Link>
-    </div>
-  );
+export default function () {
+  useEffect(() => {});
+  return <HomeView />;
 }
