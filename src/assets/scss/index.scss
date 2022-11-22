@@ -1,7 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#login {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(92, 151, 120);
+}
 #login .title1 {
   color: white;
   margin-left: 20px;
+  font-size: 20px;
+}
+#login .ct-lg-1 {
+  color: white;
+  margin-left: 20px;
   font-size: 13px;
+  margin-bottom: 120px;
 }
 #login .title2 {
   color: rgb(92, 151, 120);
@@ -12,12 +27,38 @@
   font-family: sans-serif;
   font-weight: bold;
 }
+#login .Forgot:hover,
+#login .checkbox:hover {
+  color: black;
+}
+#login .form-login {
+  display: flex;
+  padding: 10px 20px;
+  margin: 8px 15px;
+}
 #login .background-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(92, 151, 120);
+  // background-color: rgb(92, 151, 120);
 }
+#login .ft-content-login {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  padding: 0 8px;
+  margin: 8px 16px;
+}
+#login .title-1-login,
+#login .title-2-login {
+  color: white;
+  font-size: 14px;
+}
+#login .title-1-login:hover,
+#login .title-2-login:hover {
+  color: rgb(92, 151, 120);
+}
+
 #login .background-card1 {
   background-color: black;
   margin-left: 200px;
@@ -37,21 +78,46 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
-#login .input-text {
+#login .form-info-login {
+  padding: 8px 15px;
+  margin: 8px 15px;
+}
+#login .input-username {
   width: 300px;
   height: 38px;
   margin-left: 30px;
   border-radius: 20px;
   margin-bottom: 20px;
-  border: 1px solid black;
+  border: 1px solid #d8d8dd;
 }
-
+#login .input-username:hover {
+  box-shadow: 0 0 20px rgb(11 28 52 / 15%);
+  transition: all 0.2s ease-in;
+  border-color: transparent;
+}
+#login .input-password:hover {
+  box-shadow: 0 0 20px rgb(11 28 52 / 15%);
+  transition: all 0.2s ease-in;
+  border-color: transparent;
+}
+// #login .input-username:focus {
+//   box-shadow: 0 0 20px rgb(11 28 52 / 15%);
+//   border: none;
+//   outline: 0;
+// }
+#login .ant-input-affix-wrapper:focus,
+#login .ant-input-affix-wrapper-focused {
+  box-shadow: 0 0 20px rgb(11 28 52 / 15%);
+  border: none;
+  outline: 0;
+  border-right-width: 1px;
+}
 #login .input-password {
   width: 300px;
   height: 38px;
   border-radius: 20px;
   margin-left: 30px;
-  border-color: black;
+  border: 1px solid #d8d8dd;
 }
 #login .checkbox {
   margin-top: 20px;
@@ -67,7 +133,7 @@
   font-weight: bold;
   color: rgb(92, 151, 120);
 }
-#login .button {
+#login .btn-login {
   width: 300px;
   height: 38px;
   margin-left: 30px;
@@ -76,6 +142,13 @@
   background-color: rgb(92, 151, 120);
   font-weight: bold;
   color: white;
+  border: none;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#login .btn-login:hover {
+  background-color: black;
+  transition: 0.5s all;
 }
 #login .logo {
   width: 100px;
